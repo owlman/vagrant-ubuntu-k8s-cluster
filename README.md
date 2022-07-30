@@ -79,3 +79,21 @@ Kubernetes: 1.21.1
     # 销毁指定的虚拟机
     vagrant destroy <主机名> -f
     ```
+
+### 使用 Kubectl
+
+如果想使用 kubectl 命令行工具远程操作 K8s 集群，可打开 Powershell/Bash 等命令行终端环境并进入到`vagrant-ubuntu-k8s-cluster`目录中，然后执行以下命令：
+
+```bash
+mkdir ~/.kube
+cp ./configs/config  ~/.kube/
+```
+
+如果一切顺利，当我们在本地的命令行终端中输入`kubectl get nodes`命令时，就能看到如下输出了：
+
+```bash
+NAME          STATUS     ROLES                  AGE   VERSION
+k8s-master    Ready      control-plane,master   22h   v1.21.1
+k8s-worker1  Ready      <none>                 20h   v1.21.1
+k8s-worker2  Ready      <none>                 21h   v1.21.1
+```

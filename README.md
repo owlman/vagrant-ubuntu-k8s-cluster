@@ -82,7 +82,7 @@ Kubernetes: 1.21.1
 
 ### 使用 Kubectl
 
-如果想使用 kubectl 命令行工具远程操作 K8s 集群，可打开 Powershell/Bash 等命令行终端环境并进入到`vagrant-ubuntu-k8s-cluster`目录中，然后执行以下命令：
+如果想使用 kubectl 命令行工具在本地远程操作这个虚拟的 Kubernetes 集群，可打开 Powershell/Bash 等命令行终端环境并进入到`vagrant-ubuntu-k8s-cluster`目录中，然后执行以下命令：
 
 ```bash
 mkdir ~/.kube

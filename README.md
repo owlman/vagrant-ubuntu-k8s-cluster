@@ -94,6 +94,6 @@ cp ./configs/config  ~/.kube/
 ```bash
 NAME          STATUS     ROLES                  AGE   VERSION
 k8s-master    Ready      control-plane,master   22h   v1.21.1
-k8s-worker1  Ready      <none>                 20h   v1.21.1
-k8s-worker2  Ready      <none>                 21h   v1.21.1
+k8s-worker1   Ready      <none>                 20h   v1.21.1
+k8s-worker2   Ready      <none>                 21h   v1.21.1
 ```
